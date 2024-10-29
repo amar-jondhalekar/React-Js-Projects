@@ -1,5 +1,5 @@
 ````markdown
-# First React Project
+# React Project
 
 This is a React project created with Vite. It includes examples demonstrating React concepts like component communication, hooks, and custom layout components.
 
