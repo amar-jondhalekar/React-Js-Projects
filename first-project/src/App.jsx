@@ -8,7 +8,9 @@ function App() {
   function clickMe(){
     console.log('hey!!!');
   }
+  const array = [1, 2, 3, 4, 5, 6, 7];
   return(
+    <>
     <div>
       <Navigation/>
       <div className="main_container">
@@ -19,6 +21,11 @@ function App() {
       <MainSection/>
       <MainSection/>
       <MainSection/>
+      </div>
+      <Footer/>
+    </div>
+    <div>
+      Second Parent
       {/* checking js code execution directly in jsx */}
       <h2 onClick={() => {
         console.log('Hi');
@@ -27,9 +34,13 @@ function App() {
         ClickMe!
       </h1>
       
-      </div>
-      <Footer/>
+      <ul>
+        {array.map((value, index) => (
+            <li key={index}> {value} </li>
+          ))}
+      </ul>
     </div>
+    </>
   )
 }
 
