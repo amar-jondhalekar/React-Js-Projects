@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import "./App.css"
 import Child from "./components/FromChildToParent/Parent";
 import Parent from "./components/FromParentToChild/Parent";
-import UseStateHook from "./components/UseStateHook/UseStateHook";
+import UseStateHook from "./components/useStateHook/useStateHook";
 
 function App() {
   function clickMe(){
