@@ -1,16 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navigation from "./components/Navigation";
+import SideNav from "./components/SideNav";
+import MainSection from "./components/MainSection";
+import Footer from "./components/Footer";
+import "./App.css"
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-     <h1> Amar Jondhalekar </h1>
-    </>
+  return(
+    <div>
+      <Navigation/>
+      <div className="main_container">
+      <SideNav/>
+      <MainSection/>
+      <MainSection/>
+      <MainSection/>
+      <MainSection/>
+      <MainSection/>
+      <MainSection/>
+      </div>
+      <Footer/>
+    </div>
   )
 }
 
-export default App
+export default App;
