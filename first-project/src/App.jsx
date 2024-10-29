@@ -16,6 +16,10 @@ function App() {
       <MainSection/>
       <MainSection/>
       <MainSection/>
+      {/* checking js code execution directly in jsx */}
+      <h2 onClick={() => {
+        console.log('Hi');
+      }}> Click </h2>
       </div>
       <Footer/>
     </div>
