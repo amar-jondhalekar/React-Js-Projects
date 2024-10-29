@@ -6,7 +6,11 @@ const UseStateHook = () => {
 
     const plus = () => {
         // count++;
-        setCount(count + 1);
+        // setCount(count + 1);
+        // Also get previous value or data and when we use setCount then updating value by 3 times
+        setCount((prevCount) => prevCount + 1)
+        setCount((prevCount) => prevCount + 1)
+        setCount((prevCount) => prevCount + 1)
         console.log(count);
     }
     const sub = () => {
