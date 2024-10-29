@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 
+const initialData = () => {
+    console.log('Hello, Amar!');
+    return 0;
+}
 const UseStateHook = () => {
-    const[count, setCount] = useState(0);
+                                        // if initialData() directly pass then it will render every time when count button click 
+    const[count, setCount] = useState(() => initialData()); // when we pass as callback then initialData() will run only once
     // let count = 0;
 
     const plus = () => {
@@ -9,8 +14,8 @@ const UseStateHook = () => {
         // setCount(count + 1);
         // Also get previous value or data and when we use setCount then updating value by 3 times
         setCount((prevCount) => prevCount + 1)
-        setCount((prevCount) => prevCount + 1)
-        setCount((prevCount) => prevCount + 1)
+        // setCount((prevCount) => prevCount + 1)
+        // setCount((prevCount) => prevCount + 1)
         console.log(count);
     }
     const sub = () => {
