@@ -6,6 +6,7 @@ import "./App.css"
 import Child from "./components/FromChildToParent/Parent";
 import Parent from "./components/FromParentToChild/Parent";
 import UseStateHook from "./components/useStateHook/useStateHook";
+import UseEffectHook from "./components/UseEffectHook/UseEffectHook";
 
 function App() {
   function clickMe(){
@@ -15,36 +16,38 @@ function App() {
   return(
     <>
     <div>
-      <Navigation/>
+    <UseStateHook/>
+    <UseEffectHook/>
+      {/* <Navigation/> */}
       <div className="main_container">
-      <SideNav/>
+      {/* <SideNav/>
       <MainSection/>
       <MainSection/>
       <MainSection/>
       <MainSection/>
       <MainSection/>
-      <MainSection/>
+      <MainSection/> */}
       </div>
-      <Footer/>
+      {/* <Footer/>
       <Child/>
-      <Parent/>
+      <Parent/> */}
     </div>
     <div>
       Second Parent
       {/* checking js code execution directly in jsx */}
-      <h2 onClick={() => {
+      {/* <h2 onClick={() => {
         console.log('Hi');
-      }}> Click </h2>
-      <h1 onClick={clickMe}>
+      }}> Click </h2> */}
+      {/* <h1 onClick={clickMe}>
         ClickMe!
-      </h1>
+      </h1> */}
       
-      <ul>
+      {/* <ul>
         {array.map((value, index) => (
             <li key={index}> {value} </li>
           ))}
-      </ul>
-      <UseStateHook/>
+      </ul> */}
+      
     </div>
     </>
   )
