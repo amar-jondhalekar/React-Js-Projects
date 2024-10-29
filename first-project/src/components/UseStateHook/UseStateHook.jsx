@@ -25,12 +25,14 @@ const UseStateHook = () => {
     }
 
     useEffect(() => {
-        // Function logic will be written here 
+        // Function logic will be written here
+        console.log("count", count); 
 
         return() => {
         // this is cleanup function 
         }
     }, [
+        // count, when we add count here it will not render or watch function logic in useEffect 
         // this is dependency array
     ])
   return (
