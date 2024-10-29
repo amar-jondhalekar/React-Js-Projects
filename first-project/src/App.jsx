@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import "./App.css"
 import Child from "./components/FromChildToParent/Parent";
 import Parent from "./components/FromParentToChild/Parent";
+import UseStateHook from "./components/UseStateHook/UseStateHook";
 
 function App() {
   function clickMe(){
@@ -43,6 +44,7 @@ function App() {
             <li key={index}> {value} </li>
           ))}
       </ul>
+      <UseStateHook/>
     </div>
     </>
   )
