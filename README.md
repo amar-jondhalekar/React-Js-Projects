@@ -1,7 +1,3 @@
-Here's a `README.md` file template for your GitHub project, complete with a project structure/tree and author credit.
-
----
-
 ````markdown
 # First React Project
 
