@@ -3,6 +3,8 @@ import SideNav from "./components/SideNav";
 import MainSection from "./components/MainSection";
 import Footer from "./components/Footer";
 import "./App.css"
+import Child from "./components/FromChildToParent/Parent";
+import Parent from "./components/FromParentToChild/Parent";
 
 function App() {
   function clickMe(){
@@ -23,6 +25,8 @@ function App() {
       <MainSection/>
       </div>
       <Footer/>
+      <Child/>
+      <Parent/>
     </div>
     <div>
       Second Parent
