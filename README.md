@@ -80,7 +80,7 @@ first-project
 
 ## Author
 
-Created by [Amar Jondhalekar](https://github.com/your-github-profile).
+Created by [Amar Jondhalekar](https://github.com/amar-jondhalekar).
 
 ---
 
