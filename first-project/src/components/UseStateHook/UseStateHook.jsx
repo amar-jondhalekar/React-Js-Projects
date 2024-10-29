@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const initialData = () => {
     console.log('Hello, Amar!');
@@ -23,6 +23,16 @@ const UseStateHook = () => {
         setCount(count - 1);
         console.log(count);
     }
+
+    useEffect(() => {
+        // Function logic will be written here 
+
+        return() => {
+        // this is cleanup function 
+        }
+    }, [
+        // this is dependency array
+    ])
   return (
     <div>
         <h2>useStateHook</h2>
