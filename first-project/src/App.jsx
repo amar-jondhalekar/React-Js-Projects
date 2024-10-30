@@ -7,6 +7,7 @@ import Child from "./components/FromChildToParent/Parent";
 import Parent from "./components/FromParentToChild/Parent";
 import UseStateHook from "./components/useStateHook/useStateHook";
 import UseEffectHook from "./components/UseEffectHook/UseEffectHook";
+import UseReducerHook from "./components/UseReducerHook.jsx/UseReducerHook";
 
 function App() {
   function clickMe(){
@@ -16,10 +17,11 @@ function App() {
   return(
     <>
     <div>
-    <UseStateHook/>
-    <UseEffectHook/>
+    {/* <UseStateHook/> */}
+    {/* <UseEffectHook/> */}
+    <UseReducerHook/>
       {/* <Navigation/> */}
-      <div className="main_container">
+      <div className="main_container"> 
       {/* <SideNav/>
       <MainSection/>
       <MainSection/>
