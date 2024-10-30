@@ -1,7 +1,7 @@
-````markdown
-# React Project
+```markdown
+# First React Project
 
-This is a React project created with Vite. It includes examples demonstrating React concepts like component communication, hooks, and custom layout components.
+This is a React project created with Vite. It demonstrates various React concepts and hooks, such as `useState`, `useEffect`, `useReducer`, and `useRef`, as well as component communication and layout structuring.
 
 ## Table of Contents
 
@@ -12,17 +12,17 @@ This is a React project created with Vite. It includes examples demonstrating Re
 
 ## Project Overview
 
-The project is a basic setup for learning and demonstrating key React concepts, such as:
-
+The project serves as a foundational example of a React application that includes:
 - Communication between child and parent components
-- Usage of `useState` and `useEffect` hooks
-- Basic layout components like `Footer`, `Navigation`, and `SideNav`
+- Usage of React hooks (`useState`, `useEffect`, `useReducer`, and `useRef`)
+- Basic layout components (`Footer`, `Navigation`, `SideNav`, etc.)
 
 ## Project Structure
 
 ```plaintext
 first-project
 ├── public
+│   └── vite.svg
 ├── src
 │   ├── assets
 │   │   └── react.svg
@@ -37,6 +37,10 @@ first-project
 │   │   │   └── index.jsx
 │   │   ├── UseEffectHook
 │   │   │   └── UseEffectHook.jsx
+│   │   ├── UseReducerHook
+│   │   │   └── UseReducerHook.jsx
+│   │   ├── UseRefHook
+│   │   │   └── UseRefHook.jsx
 │   │   ├── UseStateHook
 │   │   │   └── UseStateHook.jsx
 │   │   ├── Footer.jsx
@@ -56,19 +60,16 @@ first-project
 ├── package.json
 ├── vite.config.js
 ```
-````
 
 ## Getting Started
 
 1. **Clone the repository**
-
    ```bash
    git clone https://github.com/your-username/first-project.git
    cd first-project
    ```
 
 2. **Install dependencies**
-
    ```bash
    npm install
    ```
@@ -81,10 +82,4 @@ first-project
 ## Author
 
 Created by [Amar Jondhalekar](https://github.com/amar-jondhalekar).
-
----
-
-```
-
-Make sure to replace `"https://github.com/your-username/first-project.git"` and `"https://github.com/your-github-profile"` with your actual GitHub URLs.
 ```
