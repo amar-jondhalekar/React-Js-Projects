@@ -3,6 +3,7 @@ import './App.css'
 import UseStateHook from './ReactHooks/UseStateHook'
 import UseMemoHook from './ReactHooks/UseMemoHook'
 import UseRefHook from './ReactHooks/UseRefHook'
+import UseContextHook from './ReactHooks/UseContextHook'
 
 // function countInitial(){
 //   console.log('run function');
@@ -16,6 +17,7 @@ function App() {
     <UseStateHook/>
     <UseMemoHook/>
     <UseRefHook/>
+    <UseContextHook/>
     </>
   )
 }
