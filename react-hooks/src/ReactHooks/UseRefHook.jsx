@@ -18,7 +18,7 @@ const UseRefHook = () => {
     }, [text])
   return (
     <>
-    <h2> UseRef Hook </h2>
+    <h1> useRef Hook </h1>
     <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
     <input type="text" value={text} ref={inputRef} onChange={(e) => setText(e.target.value)}/>
     <h4>My Name is: {text}</h4>
