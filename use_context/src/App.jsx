@@ -1,13 +1,20 @@
-import { createContext } from 'react'
+import { createContext, useState } from 'react'
 import './App.css'
+import ChildA from './components/ChildA';
 
-// create context 
+// Step 1: create context 
 const UserContext = createContext();
+// Step 2: wrap all the child inside a provider 
+// Step 3: pass value 
+// Step 4: go to consumer and consume value
 
 function App(){
+  const [user, setUser] = useState({name:"Amar"});
   return(
     <>
-    <div> Hello </div>
+    <UserContext.Provider value={user}>
+      <ChildA/>
+    </UserContext.Provider>
     </>
   )
 }
