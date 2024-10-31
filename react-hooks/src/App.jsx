@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './App.css'
 import UseStateHook from './ReactHooks/UseStateHook'
 import UseMemoHook from './ReactHooks/UseMemoHook'
@@ -9,7 +9,7 @@ import UseContextHook from './ReactHooks/UseContextHook'
 //   console.log('run function');
 //   return 4;
 // }
-
+const ThemeContext = useContext();
 function App() {
   return(
     <>
@@ -17,6 +17,7 @@ function App() {
     <UseStateHook/>
     <UseMemoHook/>
     <UseRefHook/>
+    <UseContextHook/>
     <UseContextHook/>
     </>
   )

@@ -16,6 +16,7 @@ const UseMemoHook = () => {
   // using 
   return (
     <>
+    <h1> useMemo Hook </h1>
     <h2> Expensive Calculate Result: {largeCalculation}</h2>
     <input type="number" value={number} onChange={(e) => setNumber(parseInt(e.target.value))}/>
     <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder='type here without delay'/>
