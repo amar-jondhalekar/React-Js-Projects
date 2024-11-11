@@ -5,7 +5,9 @@ const ChildComponents = React.memo(
         console.log("Child component go re-render again");
       return (
         <div>
-            <button>
+            <button
+            onClick={props.onClick}
+            >
                 {props.buttonName}
             </button>
         </div>
